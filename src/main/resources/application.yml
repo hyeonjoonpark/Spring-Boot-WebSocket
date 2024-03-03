@@ -1,0 +1,18 @@
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/websocket?serverTimezone=UTC&characterEncoding=UTF-8
+    hikari:
+      username: root
+      password: phj@3473
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+  main:
+    allow-bean-definition-overriding: true
